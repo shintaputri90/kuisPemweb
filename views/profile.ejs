@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Profile</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Profile Page</h1>
+        <p>Welcome!</p>
+
+        <div class="profile-info">
+            <div class="form-section">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" id="profileUsername" value="" readonly>
+            </div>
+            <div class="form-section">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="profileEmail" value="" readonly>
+            </div>
+            <div class="form-section">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" class="form-control" id="profilePhone" value="" readonly>
+            </div>
+            <button class="btn btn-primary edit-btn" onclick="enableEdit()">Edit Profile</button>
+            <button class="btn btn-success save-btn hidden" onclick="saveProfile()">Save Changes</button>
+            <button class="btn btn-secondary cancel-btn hidden" onclick="cancelEdit()">Cancel</button>
+            <button class="btn btn-danger delete-btn" onclick="deleteAccount()">Delete Account</button>
+        </div>
+    </div>
+
+    <script>
+        // Add the necessary JavaScript functions here (enableEdit, saveProfile, cancelEdit, deleteAccount)
+    </script>
+</body>
+</html>
